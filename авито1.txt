@@ -1,0 +1,40 @@
+здесь создание таблиц и наполнение тестовыми данными
+CREATE TABLE task_status  ( 
+issue_key INT(8) UNSIGNED, 
+status VARCHAR(30) NOT NULL, 
+start_time DATETIME NOT NULL
+); 
+
+CREATE TABLE task_info  ( 
+issue_key INT(8) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+type VARCHAR(30) NOT NULL, 
+name VARCHAR(100) NOT NULL
+); 
+
+
+INSERT INTO `task_info` (`issue_key`, `type`, `name`) VALUES ('1', 'Bug', 'landing error');
+INSERT INTO `task_info` (`issue_key`, `type`, `name`) VALUES ('2', 'Task', 'create new page');
+INSERT INTO `task_info` (`issue_key`, `type`, `name`) VALUES ('3', 'Bug', 'auth error');
+INSERT INTO `task_info` (`issue_key`, `type`, `name`) VALUES ('4', 'Story', 'new project');
+INSERT INTO `task_info` (`issue_key`, `type`, `name`) VALUES ('5', 'Bug', 'db connection error');
+INSERT INTO `task_info` (`issue_key`, `type`, `name`) VALUES ('6', 'Bug', 'cache connection error');
+
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('1', 'open', '2021-04-01 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('1', 'in progress', '2021-04-02 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('1', 'done', '2021-04-03 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('1', 'in progress', '2021-04-04 00:00:00');
+
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('2', 'open', '2021-03-01 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('2', 'in progress', '2021-03-02 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('2', 'done', '2021-03-03 00:00:00');
+
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('3', 'open', '2021-04-10 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('3', 'in progress', '2021-04-12 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('3', 'done', '2021-04-14 00:00:00');
+
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('5', 'open', '2021-05-10 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('5', 'in progress', '2021-05-12 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('5', 'done', '2021-05-14 00:00:00');
+
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('6', 'open', '2021-04-10 00:00:00');
+INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('6', 'done', '2021-04-14 00:00:00');
