@@ -1,7 +1,7 @@
 # gitAvito
 
 здесь создание таблиц и наполнение тестовыми данными
-
+```
 CREATE TABLE task_status  ( 
 issue_key INT(8) UNSIGNED, 
 status VARCHAR(30) NOT NULL, 
@@ -52,6 +52,7 @@ AND
 task_status.status = 'in progress'
 AND
 task_status.start_time BETWEEN '2021-04-01 00:00:00' AND '2021-04-30 23:59:59';
+```
 
 ТЗ №2
 
