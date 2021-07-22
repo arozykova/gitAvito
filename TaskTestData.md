@@ -1,7 +1,7 @@
 # gitAvito
 
 здесь создание таблиц и наполнение тестовыми данными
-'''
+
 CREATE TABLE task_status  ( 
 issue_key INT(8) UNSIGNED, 
 status VARCHAR(30) NOT NULL, 
@@ -40,7 +40,6 @@ INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('5', 'do
 
 INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('6', 'open', '2021-04-10 00:00:00');
 INSERT INTO `task_status` (`issue_key`, `status`, `start_time`) VALUES ('6', 'done', '2021-04-14 00:00:00');
-'''
 
 а это сам ответ на ТЗ
 
